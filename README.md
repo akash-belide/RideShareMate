@@ -84,10 +84,14 @@ npm start
 
 ---
 
-## **📜 Smart Contract Overview**
-- `RideShare.sol` → Handles ride booking, payments, and ratings.
-- `DriverRegistry.sol` → Manages driver verification and data.
-- `PassengerRegistry.sol` → Stores passenger information securely.
+## 📜 Smart Contract Overview
+- `Migrations.sol` → Required for Truffle to manage contract deployment.
+- `RideShare.sol` → Main smart contract for handling ride-sharing functionalities:
+  - **Create Ride** (Driver can create a new ride)
+  - **Set Ride Details** (Cost, capacity, origin, destination, timestamps)
+  - **Passenger Booking** (Passengers can join available rides)
+  - **Reputation System** (Rewards users with points for completed rides)
+
 
 ---
 
